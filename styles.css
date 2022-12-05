@@ -1,0 +1,70 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* css of the box */
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.top-half, .middle-half, .bottom-half{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+
+.bottom-half{
+    justify-content: space-evenly;
+}
+
+.player-choice{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:center;
+    margin: 10px;
+}
+
+.computer-choice{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+/* css of the elements */
+
+.rock, .paper ,.scissors{
+    background-size:cover;
+    width: 64px;
+    height: 64px;
+    margin: 64px;
+    border-color: #505050;
+}
+.rock{
+    background-image:url("images/rock.png");
+}
+
+.paper{
+    background-image:url("images/paper.png");
+}
+
+.scissors{
+    background-image:url("images/scissors.png");
+}
+
+/* class list for the added images and paragraphs */
+.add-image{
+    width:64px;
+    height:64px;
+    border-color:#505050;
+    margin:20px;
+}
+
+.result{
+    align-self: flex-end;
+    max-width: 256px;
+    margin: 10px;
+}
